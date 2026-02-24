@@ -526,6 +526,10 @@ h2.blog-title {
     z-index: 1;
 }
 
+.blog .blog-img img {
+    width: 100%;
+}
+
 .blog-content {
     position: relative;
     width: calc(100% - 60px);
