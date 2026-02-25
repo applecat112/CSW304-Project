@@ -42,6 +42,36 @@ h6 {
     font-family: var(--nunito)
 }
 
+/* Nav */
+.navbar {
+    padding: 0 0;
+}
+
+.navbar-brand {
+    color: #fbaf32;
+    font-size: 45px;
+}
+
+.navbar-brand:hover {
+    color: #fbaf32;
+}
+
+.navbar-brand .green-king {
+    font-size: 45px;
+    color: #719a0a;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600px;
+    padding: 0 15px;
+    font-size: 18px;
+    color: #666666;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f4a62a;
+}
+
 /* Header */
 .carousel {
     position: relative;
@@ -185,7 +215,7 @@ h6 {
     font-family: var(--nunito);
 }
 
-.about-text {
+.booking-text {
     color: #757575;
     font-family: var(--font-sans);
 }
@@ -205,6 +235,11 @@ h6 {
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
+}
+
+/* Đổi màu icon calendar mặc định (Chrome, Edge, Brave...) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
 }
 
 .booking-form .form-control {
@@ -781,7 +816,7 @@ h2.blog-title {
 
 /* End Main */
 /* Responsive */
-@media(max-width: 575.98px){
+@media(max-width: 575.98px) {
     .blog .blog-meta p {
         flex: 50%;
         font-size: 13px;
@@ -797,14 +832,14 @@ h2.blog-title {
 }
 
 @media (max-width: 767.98px) {
-    .header-content  h2 {
+    .header-content h2 {
         font-size: 35px;
         font-weight: 600;
     }
 }
 
 @media (max-width: 575.98px) {
-    .header-content  h2 {
+    .header-content h2 {
         font-size: 30px;
         font-weight: 600;
     }
