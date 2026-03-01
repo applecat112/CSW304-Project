@@ -47,13 +47,6 @@ h6 {
 }
 
 /* Nav */
-.navbar {
-    padding: 0 0;
-}
-
-.navbar .container{
-    padding: 20px 10px
-}
 
 .navbar-brand .burger {
     color: #fbaf32;
@@ -95,6 +88,11 @@ h6 {
     background: #f8f9fa;
 }
 
+/* carousel */
+
+.container-fluid .heroCarousel {
+    padding: 0 0;
+}
 
 .carousel-item {
     height: 100vh;
@@ -106,6 +104,21 @@ h6 {
     object-fit: cover;
 }
 
+.carousel-caption h1 {
+    color: white;
+}
+
+.quality {
+    color: #fbaf32;
+}
+
+.carousel-content {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
 .carousel-item::before {
     content: "";
     position: absolute;
@@ -113,9 +126,35 @@ h6 {
     background: rgba(0, 0, 0, 0.6);
 }
 
+.carousel-caption h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
 .carousel-caption {
-    bottom: 50%;
-    transform: translateY(50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    z-index: 2;
+    text-align: center;
+}
+
+/* button in header*/
+.carousel .mt-4 .btn:last-child {
+    margin-left: 10px;
+    background: #719a0a;
+    border-color: #719a0a;
+}
+
+.carousel .mt-4 .btn:last-child:hover {
+    color: #719a0a;
+    border-color: #719a0a;
+    background: transparent;
 }
 
 /* Main */
@@ -761,6 +800,33 @@ h2.blog-title {
 
 /* End Main */
 /* Responsive */
+@media (max-width: 991px) {
+
+    .navbar {
+        background-color: #fff;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .navbar-nav {
+        text-align: left;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 5px 0;
+        font-size: 16px;
+        color: #00000080;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: #000;
+    }
+}
+
 @media(max-width: 575.98px) {
     .blog .blog-meta p {
         flex: 50%;
