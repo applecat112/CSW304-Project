@@ -289,6 +289,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: #ffffff;
 }
 
+.booking .container {
+    max-width: 1140px;
+}
 
 .custom-btn {
     padding: 12px 25px;
