@@ -78,7 +78,9 @@ h6 {
 }
 
 .navbar {
-    z-index: 1000;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .navbar .dropdown-menu {
@@ -86,6 +88,10 @@ h6 {
     border: 0;
     border-radius: 0;
     background: #f8f9fa;
+}
+
+.navbar-nav .nav-link.show {
+    color: #f4a62a;
 }
 
 /* carousel */
@@ -815,8 +821,14 @@ h2.blog-title {
 
 /* End Main */
 /* Responsive */
-@media (max-width: 991px) {
+/* ========================
+   RESPONSIVE
+======================== */
 
+/* <= 991px (Tablet & Mobile) */
+@media (max-width: 991.98px) {
+
+    /* Navbar */
     .navbar {
         background-color: #fff;
     }
@@ -840,16 +852,51 @@ h2.blog-title {
     .navbar-nav .nav-link.active {
         color: #000;
     }
+
+    .navbar.fixed-top {
+        position: relative !important;
+    }
+
+    /* Section */
+    .header-content h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .about .about-img {
+        margin-bottom: 30px;
+    }
 }
 
+
+/* <= 767px (Small tablet) */
+@media (max-width: 767.98px) {
+    .header-content h2 {
+        font-size: 35px;
+    }
+}
+
+
+/* <= 575px (Mobile) */
 @media (max-width: 575.98px) {
 
+    /* Carousel */
     .carousel-caption {
-        padding: 0 0;
+        padding: 0;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
     }
 
     .carousel-caption .carousel-text {
         font-size: 16px;
+    }
+
+    .carousel-caption .carousel-btn .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+        letter-spacing: 0;
     }
 
     .carousel-item img {
@@ -859,52 +906,19 @@ h2.blog-title {
     }
 
     .container-fluid {
-        padding: 0 0;
+        padding: 0;
         width: 100%;
     }
 
-    .carousel-caption h1 {
-        font-size: 25px;
-    }
-
-    .carousel-caption .carousel-btn .btn {
-        padding: 8px 20px;
-        font-size: 14px;
-        letter-spacing: 0;
-    }
-}
-
-@media(max-width: 575.98px) {
+    /* Blog */
     .blog .blog-meta p {
         flex: 50%;
         font-size: 13px;
         margin: 0 0 5px 0;
     }
-}
 
-@media (max-width: 991.98px) {
-    .header-content h2 {
-        font-size: 40px;
-        font-weight: 600;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .header-content h2 {
-        font-size: 35px;
-        font-weight: 600;
-    }
-}
-
-@media (max-width: 575.98px) {
+    /* Section title */
     .header-content h2 {
         font-size: 30px;
-        font-weight: 600;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .about .about-img {
-        margin-bottom: 30px;
     }
 }
