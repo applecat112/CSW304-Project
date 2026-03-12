@@ -850,6 +850,10 @@ h2.blog-title {
     color: white;
 }
 
+.form .btn:hover {
+    border: 1px solid #fbaf32;
+}
+
 .copyright {
     position: relative;
     width: 100%;
